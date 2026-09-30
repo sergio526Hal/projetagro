@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle Plugin
+        classpath "com.android.tools.build:gradle:8.4.0"
+
+
+        // Kotlin plugin - tokony 1.9.24 na mihoatra
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24"
+
+        // Firebase Google Services
+        classpath "com.google.gms:google-services:4.4.2"
+    }
+
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// ✅ tsy adino ity, manampy noho ny Flutter
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

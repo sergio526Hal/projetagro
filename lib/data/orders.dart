@@ -1,0 +1,36 @@
+import 'package:projetagro/data/products.dart';
+import 'package:projetagro/models/order.dart';
+import 'package:projetagro/utils/enums/order.dart';
+
+List<Order> orders = [
+  Order(id: "JDJDFBH", products: products.reversed.take(3).toList(),
+      orderingDate: DateTime.utc(2024, 10, 03),
+      deliveryDate: DateTime.utc(2024, 10, 30),
+      status: OrderStatus.livrer,
+  ),
+  Order(id: "JDJDFBH", products: products.reversed.take(3).toList(),
+    orderingDate: DateTime.utc(2024, 10, 03),
+    deliveryDate: DateTime.utc(2024, 10, 30),
+    status: OrderStatus.traitement,
+  ),
+  Order(id: "JDJDFBH", products: products.reversed.take(3).toList(),
+    orderingDate: DateTime.utc(2024, 10, 03),
+    deliveryDate: DateTime.utc(2024, 10, 30),
+    status: OrderStatus.livrer,
+  ),
+  Order(id: "JDJDFBH", products: products.reversed.take(3).toList(),
+    orderingDate: DateTime.utc(2024, 10, 03),
+    deliveryDate: DateTime.utc(2024, 10, 30),
+    status: OrderStatus.cueillette,
+  ),
+  Order(id: "JDJDFBH", products: products.reversed.take(3).toList(),
+    orderingDate: DateTime.utc(2024, 10, 03),
+    deliveryDate: DateTime.utc(2024, 10, 30),
+    status: OrderStatus.expedition,
+  ),
+  Order(id: "JDJDFBH", products: products.reversed.take(3).toList(),
+    orderingDate: DateTime.utc(2024, 10, 03),
+    deliveryDate: DateTime.utc(2024, 10, 30),
+    status: OrderStatus.traitement,
+  ),
+];

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444611964256",
+    "project_id": "agro-business-1de63",
+    "storage_bucket": "agro-business-1de63.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444611964256:android:bdc9917a034447d091c205",
+        "android_client_info": {
+          "package_name": "com.maminomena.agroapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiTBcj7855HeKxNWMb0LzlRRo-fwwZiZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
